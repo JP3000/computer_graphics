@@ -4,8 +4,8 @@
 #include <graphics.h>
 #define FNX(x) (x_0 + x * s1)
 #define FNY(y) (y_0 - y * s1)
-#define f(x) x*x
-
+#define f(x) x+(1/x)
+//#define f(x) x*x
 void setup(void);
 int x_0, y_0, MAXX, MAXY;
 float s1;
@@ -20,7 +20,8 @@ int main()
     */
     x1 = -10, x2 = 10, dx = 0.01;
     cleardevice();
-    setcolor(14);
+    //setcolor(14);
+    setcolor(3);
     xs = FNX(x1); ys = FNY(0), moveto(xs - 10, ys);
     xs = FNX(x2); lineto(xs + 10, ys);
     xs = FNX(0); ys = FNY(0), moveto(xs, ys);
