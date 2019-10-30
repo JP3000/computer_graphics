@@ -9,13 +9,13 @@ int main()
     int bkcolor, midx, midy;
     initgraph(&gd, &gm, NULL);
     //DDALine(0, 0, 640, 480);
-    setcolor(2);
+    setcolor(RED);
     DDALine(160, 360, 540, 360);
     DDALine(240, 60, 240, 480);
     //DDALine(480, 360, 240, 120);
     DDALine(540, 420, 180, 60);
 
-    setcolor(3);
+    setcolor(GREEN);
     line(160, 420, 540, 420);
     line(300, 60, 300, 480);
     //line(480, 360, 240, 120);

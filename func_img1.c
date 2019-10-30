@@ -21,7 +21,7 @@ int main()
     x1 = -10, x2 = 10, dx = 0.01;
     cleardevice();
     //setcolor(14);
-    setcolor(3);
+    setcolor(GREEN);
     xs = FNX(x1); ys = FNY(0), moveto(xs - 10, ys);
     xs = FNX(x2); lineto(xs + 10, ys);
     xs = FNX(0); ys = FNY(0), moveto(xs, ys);
